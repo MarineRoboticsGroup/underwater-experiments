@@ -1,1 +1,1 @@
-sudo apt-get install  ros-melodic-geographic-msgs
+sudo apt-get install -y ros-melodic-geographic-msgs
