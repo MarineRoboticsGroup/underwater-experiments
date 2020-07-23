@@ -1,0 +1,9 @@
+[submodule "src/catkin_simple"]
+	path = src/catkin_simple
+	url = git@github.com:catkin/catkin_simple.git
+[submodule "src/eigen_catkin"]
+	path = src/eigen_catkin
+	url = git@github.com:ethz-asl/eigen_catkin.git
+[submodule "src/geonav_transform"]
+	path = src/geonav_transform
+	url = git@github.com:bsb808/geonav_transform.git
