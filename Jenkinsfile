@@ -30,7 +30,7 @@ pipeline {
         echo 'Building'
         sh '''#!/bin/bash -l
         source /opt/ros/melodic/setup.bash
-        catkin build
+        catkin_make
         '''
       }
     }

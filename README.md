@@ -1,3 +1,5 @@
+[![Build Status](http://mrg-beast.csail.mit.edu:8080/buildStatus/icon?job=underwater-experiments%2Fmaster)](http://mrg-beast.csail.mit.edu:8080/job/underwater-experiments/job/master/)
+
 # Build instructions
 ```
 git clone git@github.com:victor-amblard/underwater-experiments.git
