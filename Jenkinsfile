@@ -19,6 +19,7 @@ pipeline {
         sh '''#!/bin/bash -l
         echo 'Update apt'
         sudo apt-get -y update
+	sh ./install_dependencies.sh
         catkin init
         catkin config --merge-devel
         catkin config --cmake-args -DCMAKE_BUILD_TYPE=Release
