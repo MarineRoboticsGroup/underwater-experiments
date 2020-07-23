@@ -1,0 +1,37 @@
+------------- Velodyne Startup ----------------
+
+ip 192.168.0.201
+mask 255.255.255.0
+gateway 192.168.0.1
+
+ros driver wiki: http://wiki.ros.org/velodyne
+ros driver source: https://github.com/ros-drivers/velodyne
+clone driver source into ros workspace src folder
+cd into ros ws base folder
+catkin_make
+source devel/setup.bash
+
+create ethernet connection on your lapatop on 192.168.0.* with netmask 24
+ensure you can ping lidar at 192.168.0.201
+then:
+
+roslaunch velodyne_pointcloud VLP16_points.launch
+
+
+
+------------- Mapping Startup ----------------
+package source: https://github.com/laboshinl/loam_velodyne
+clone source into ros workspace src folder
+cd into ros ws base folder
+catkin_make
+source devel/setup.bash
+roslaunch loam_velodyne hector_loam_velodyne.launch
+
+rviz should automatically startup and you should be able to see the map being constructed
+
+
+
+------------- Saving Map ----------------
+sudo apt-get install ros-<version>-pcl-ros
+rosrun pcl_ros pointcloud_to_pcd input:=/laser_cloud_surround
+
