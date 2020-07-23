@@ -1,0 +1,8 @@
+#! /usr/bin/env python
+
+import r2sonic_ros.decodeSocket
+import roslib; roslib.load_manifest('r2sonic_ros')
+import argparse
+
+if __name__ == '__main__':
+        r2sonic_ros.decodeSocket.run()

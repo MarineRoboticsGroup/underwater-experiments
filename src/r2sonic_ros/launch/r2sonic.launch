@@ -1,0 +1,7 @@
+<launch>
+
+  <node pkg="r2sonic_ros" name="r2sonic" type="r2sonic"/> 
+  <param name="ip_addr" value="10.23.0.41"/>
+  <param name="port" value="4000"/>
+  <param name="message_size" value="1394"/>
+</launch>

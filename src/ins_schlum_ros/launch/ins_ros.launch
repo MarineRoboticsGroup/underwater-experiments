@@ -1,0 +1,7 @@
+<launch>
+
+  <node pkg="ins_schlum_ros" name="ins" type="ins"/> 
+  <param name="ip_addr" value="10.0.0.41"/>
+  <param name="port" value="4000"/>
+  <param name="message_size" value="1394"/>
+</launch>

@@ -7,3 +7,9 @@
 [submodule "src/geonav_transform"]
 	path = src/geonav_transform
 	url = git@github.com:bsb808/geonav_transform.git
+[submodule "src/ros_numpy"]
+	path = src/ros_numpy
+	url = git@github.com:eric-wieser/ros_numpy.git
+[submodule "src/ueye_camera"]
+	path = src/ueye_camera
+	url = git@github.com:anqixu/ueye_cam.git

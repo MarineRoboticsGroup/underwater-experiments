@@ -1,0 +1,8 @@
+#! /usr/bin/env python
+
+import ins_schlum_ros.decodeSocketINS
+import roslib; roslib.load_manifest('ins_schlum_ros')
+import argparse
+
+if __name__ == '__main__':
+        ins_schlum_ros.decodeSocketINS.run()
