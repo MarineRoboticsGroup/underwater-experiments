@@ -14,3 +14,10 @@ source devel/setup.bash
 * geonav_transform: geodesy transformations from LatLong to UTM, see https://github.com/bsb808/geonav_transform 
 * ueye_camera: camera module, see  https://github.com/anqixu/ueye_cam
 
+# Frames
+* utm: Global UTM coordinate frame
+* odom: Local fixed odometry frame
+* odom2: odom translated to have its origin in the pool
+* base_link: gantry frame
+* r2sonic: sonar frame
+* camera: optical center camera frame
