@@ -9,6 +9,9 @@
 <include file = "$(find ueye_cam)/launch/rgb8.launch">
 </include>
 
+<include file = "$(find r2sonic_ros)/launch/r2sonic.launch">
+</include>
+
 <node pkg = "tf" type = "static_transform_publisher" name="center_rviz" args = "114480.763 -1731303.616 -1.010 0 0 0 1 odom odom2 100"/>
 <node pkg = "tf" type = "static_transform_publisher" name="cam_sonar" args = "0 0.134  0.027 -0.5 0.5 -0.5 0.5  r2sonic camera 100"/>
 <node pkg = "tf" type = "static_transform_publisher" name="base_link_sonar" args = "0 0 0 0 0.707109 0.707109 base_link r2sonic 100"/>
