@@ -4,6 +4,7 @@
 ```
 git clone git@github.com:victor-amblard/underwater-experiments.git
 cd underwater-experiments
+sh ./install_dependencies
 catkin init
 catkin_make
 source devel/setup.bash
